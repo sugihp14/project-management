@@ -24,6 +24,9 @@
                     <button type="submit" class="btn text-white w-100"
                         style=" background-color: #6f42c1;">Login</button>
                 </form>
+                <p class="text-center mt-3">
+                    Don't have an account? <a href="{{ route('register') }}">Sign up here </a>
+                </p>
             </div>
         </div>
     </div>

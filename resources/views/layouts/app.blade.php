@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    @if (!request()->is('login'))
+    @if (!request()->is('login') && !request()->is('register') )
 
     <nav class="navbar navbar-expand-lg" style=" background-color: #6f42c1;">
         <div class="container-fluid px-3">

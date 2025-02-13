@@ -17,6 +17,8 @@ use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 Route::post('login', [AuthController::class, 'login'])->name('api.login');
+Route::post('register', [AuthController::class, 'register'])->name('api.register');
+
 Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
 
 Route::middleware(['api', 'jwt.auth'])->group(function () {
